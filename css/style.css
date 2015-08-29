@@ -4,7 +4,7 @@
 }
 
 html{
-	height: 100%;
+	min-height: 100%;
 }
 
 body{
@@ -27,16 +27,6 @@ a:visited{
 	color: white;
 }
 
-.content{
-	max-width: 26rem;
-	text-align: center;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 h2{
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -46,6 +36,11 @@ h2{
 p{
 	font-weight: 300;
 	padding: 10px 0;
+}
+
+.content{
+	text-align: center;
+	display: inline-block;
 }
 
 .profile{
@@ -113,7 +108,39 @@ p{
 
 .footer{
 	font-size: 0.8rem;
+}
+
+
+
+@media(min-height: 470px){
+	.content{
+	max-width: 26rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+	.footer{
+	font-size: 0.8rem;
 	bottom: 5px;
 	right: 5px;
 	position: absolute;
+	}
+}
+@media(max-height: 469px){
+	.content{
+		margin: 20px;
+	}
+
+	.footer{
+		float: right;
+		clear: both;
+	}
+}
+
+@media(max-width: 500px){
+	.footer{
+		font-size: 0.7rem;
+	}
 }
