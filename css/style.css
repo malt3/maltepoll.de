@@ -94,7 +94,6 @@ p{
 	padding: 7px;
 	margin: 0 5px;
 	transition: background-color 1.2s, color 1.2s;
-	display: none;
 }
 
 .button:hover{
